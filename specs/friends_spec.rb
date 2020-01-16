@@ -133,7 +133,11 @@ end
 
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/snack arrays together)
+def test_all_snacks
+  result = all_snacks(@people)
+  assert_equal(7, result.length)
 
+end
 
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)

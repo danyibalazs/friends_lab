@@ -37,3 +37,11 @@ def loan_money(lender, lendee, amount)
 
 
 end
+
+def all_snacks(people)
+snacks = []
+  for person in people
+  snacks.concat(person[:favourites][:snacks])
+  end
+  return snacks
+end
