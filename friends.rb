@@ -45,3 +45,13 @@ snacks = []
   end
   return snacks
 end
+
+def no_friends(people)
+  loners = []
+  for person in people
+    if person[:friends].length == 0
+      loners.push(person[:name])
+    end
+  end
+  return loners
+end
